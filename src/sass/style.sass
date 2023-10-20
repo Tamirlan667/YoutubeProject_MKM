@@ -41,7 +41,6 @@ nav
     img
         width: 25px
         margin-right: 25px
-
     .user-icon
         width: 35px
         margin-right: 0px
@@ -51,7 +50,6 @@ nav
     .menu-icon
         width: 22px
         margin-right: 25px
-
     .logo
         width: 130px
 
@@ -107,7 +105,7 @@ nav
             width: 20px
             margin-right: 20px
         &:first-child
-            color: $color_2
+            color: rgb(90, 90, 90)
 
 .subscribed-list
     h3
@@ -164,7 +162,7 @@ nav
 
 .list-container
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr))
     grid-column-gap: 16px
     grid-row-gap: 30px
     margin-top: 15px
@@ -172,7 +170,7 @@ nav
 .vid-list
     .thumbnail
         width: 100%
-        border-radius: 5px
+        border-radius: 15px
 
     .flex-div
         align-items: flex-start
@@ -193,28 +191,28 @@ nav
 
 .play-container
     padding-left: 2% !important
+    .row
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
 
-.row
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
+    .play-video
+        flex-basis: 69%
+        iframe
+            width: 100%
+            border-radius: 15px
+        .tags
+            a
+                color: $color_4
+                font-size: 13px
 
-.play-video
-    flex-basis: 69%
-    iframe
-        width: 100%
-
-    .tags
-        a
-            color: $color_4
-            font-size: 13px
-
-    h3
-        font-weight: 600
-        font-size: 22px
-        margin-top: 12px
+        h3
+            font-weight: 600
+            font-size: 22px
+            margin-top: 12px
 
     .play-video-info
+        margin-top: 10px
         display: flex
         align-items: center
         justify-content: space-between
@@ -222,14 +220,102 @@ nav
         margin-top: 5px
         font-size: 14px
         color: $color_1
-        a
-            img
-                width: 20px
-                margin-right: 8px
+        .click
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-wrap: wrap
+            margin-top: 5px
+            font-size: 14px
+            color: $color_1
+            .like
+                button
+                    display: inline-flex
+                    align-items: center
+                    justify-content: center
+                    width: 88px
+                    height: 36px
+                    border-top-left-radius: 20px
+                    border-bottom-left-radius: 20px
+                    background-color: rgba(0, 0, 0, 0.05)
+                    border: 2px solid rgba(0, 0, 0, 0.001)
+                    transition: 0.5s
+                    &:hover
+                        background-color: rgba(0, 0, 0, 0.2)
+                    img
+                        width: 20px
+                        margin-right: 8px
 
-                display: inline-flex
-                align-items: center
-                margin-left: 15px
+                        display: inline-flex
+                        align-items: center
+                    span
+                        font-size: 16px
+                        color: black
+            .space
+                width: 2px
+                height: 36px
+                background-color: rgba(0, 0, 0, 0.1)
+
+            .dislike
+                button
+                    display: inline-flex
+                    align-items: center
+                    justify-content: center
+                    width: 48px
+                    height: 36px
+                    border-top-right-radius: 20px
+                    border-bottom-right-radius: 20px
+                    background-color: rgba(0, 0, 0, 0.05)
+                    border: 2px solid rgba(0, 0, 0, 0.001)
+                    font-size: 20px
+                    transition: 0.5s
+                    &:hover
+                        background-color: rgba(0, 0, 0, 0.2)
+                    img
+                        width: 20px
+                        margin-right: 8px
+
+                        display: inline-flex
+                        align-items: center
+                    span
+                        font-size: 16px
+                        color: black
+            .share
+                margin-left: 10px
+                button
+                    width: 88px
+                    height: 36px
+                    border-radius: 20px
+                    background-color: rgba(0, 0, 0, 0.05)
+                    border: 2px solid rgba(0, 0, 0, 0.001)
+                    transition: 0.5s
+                    &:hover
+                        background-color: rgba(0, 0, 0, 0.2)
+                    a
+                        img
+                            width: 20px
+                            margin-right: 8px
+
+                            display: inline-flex
+                            align-items: center
+            .save
+                margin-left: 5px
+                button
+                    width: 88px
+                    height: 36px
+                    border-radius: 20px
+                    background-color: rgba(0, 0, 0, 0.05)
+                    border: 2px solid rgba(0, 0, 0, 0.001)
+                    transition: 0.5s
+                    &:hover
+                        background-color: rgba(0, 0, 0, 0.2)
+                    a
+                        img
+                            width: 20px
+                            margin-right: 8px
+
+                            display: inline-flex
+                            align-items: center
 
     hr
         border: 0
@@ -256,36 +342,36 @@ nav
 .owner
     display: flex
     align-items: center
-    margin-top: 20px
-    div
-        flex: 1
-        line-height: 18px
-
     img
         width: 40px
         border-radius: 50%
         margin-right: 15px
+    div
+        flex: 1
+        line-height: 18px
+        p
+            color: $color_5
+            font-weight: 600
+            font-size: 18px
 
-    p
-        color: $color_5
-        font-weight: 600
-        font-size: 18px
-
-    span
-        font-size: 13px
-        color: $color_1
+        span
+            font-size: 13px
+            color: $color_1
 
     button
-        background: #ed3833
-        color: $color_6
-        padding: 8px 30px
-        border: 0
-        outline: 0
-        border-radius: 4px
+        margin-left: 15px
+        background-color: black
+        width: 100px
+        height: 40px
+        color: white
+        font-weight: bold
+        border: none
+        border-radius: 25px
         cursor: pointer
-
+        transition: 0.5s
+        &:hover
+            background-color: rgba(0, 0, 0, 0.8)
 .vid-des
-    padding-left: 55px
     margin: 15px 0
     p
         font-size: 14px
@@ -362,25 +448,3 @@ nav
 
 .hide-hr
     display: none
-
-@media (max-width: 900px)
-    .play-video
-        flex-basis: 100%
-        &-info
-            a
-                margin-left: 0
-                margin-right: 15px
-                margin-top: 15px
-
-    .right-sidebar
-        flex-basis: 100%
-        margin-top: 35px
-
-    .play-container
-        padding-left: 5%
-
-    .vid-des
-        padding-left: 5px
-
-    .hide-hr
-        display: block

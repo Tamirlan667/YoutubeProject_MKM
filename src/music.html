@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/music.css" />
+    <title>Music</title>
+  </head>
+  <body>
+    <nav class="flex-div">
+      <div class="nav-left flex-div">
+        <img src="./images/menu.png" class="menu-icon" alt="" srcset="" />
+        <img src="./images/logo.svg" class="logo" alt="" srcset="" />
+      </div>
+      <div class="nav-middle flex-div">
+        <div class="search-box flex-div">
+          <input type="text" placeholder="Search.." />
+          <div class="border"></div>
+          <img src="./images/search.png" alt="" srcset="" />
+        </div>
+        <img
+          src="./images/voice-search.png"
+          class="mic-icon"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="nav-right flex-div">
+        <img src="./images/upload.png" alt="" srcset="" />
+        <img src="./images/more.png" alt="" srcset="" />
+        <img src="./images/notification.png" alt="" srcset="" />
+        <a href="login.html"
+          ><img src="images/login.jpeg" class="user-icon" alt="" srcset=""
+        /></a>
+      </div>
+    </nav>
+
+    <!-- Side Bar -->
+
+    <div class="sidebar">
+      <div class="shortcut-links">
+        <a href="index.html"
+          ><img src="images/homew.png" />
+          <p>Home</p></a
+        >
+        <a href="#"
+          ><img src="images/historyw.png" />
+          <p>History</p></a
+        >
+        <a href="subscription.html"
+          ><img src="./images/subscribew.png" />
+          <p>subscriprion</p></a
+        >
+        <hr />
+        <a href="#"
+          ><img src="./images/libraryw.png" />
+          <p>library</p></a
+        >
+        <a href="#"
+          ><img src="./images/libraryw.png" />
+          <p>Liked videos</p></a
+        >
+        <a href="music.html"
+          ><img src="./images/playlisty.png" />
+          <p>playlist</p></a
+        >
+        <a href="settings.html"
+          ><img src="./images/settingsw.png" />
+          <p>settings</p></a
+        >
+        <a href="#"
+          ><img src="./images/show-more.png" />
+          <p>Show more</p></a
+        >
+        <hr />
+      </div>
+      <div class="subscribed-list">
+        <h3>SUBSCRIPTIONS</h3>
+        <a href="#"
+          ><img src="./images/Jack.png" />
+          <p>Jack Williamson &bull;</p></a
+        >
+        <a href="#"
+          ><img src="./images/simon.png" />
+          <p>simon Baker</p></a
+        >
+        <a href="#"
+          ><img src="./images/tom.png" />
+          <p>Tom Haland &bull;</p></a
+        >
+        <a href="#"
+          ><img src="./images/megan.png" />
+          <p>Megan Fox &bull;</p></a
+        >
+        <a href="#"
+          ><img src="./images/cameron.png" />
+          <p>Cameron Green</p></a
+        >
+        <hr />
+      </div>
+      <!-- Yera -->
+      <section class="sidebar__section">
+        <h3>Explore</h3>
+        <a href="trending.html" class="sidebar__section__link">
+          <svg viewBox="0 0 24 24">
+            <g>
+              <path
+                d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"
+              ></path>
+              <path d="M0 0h24v24H0z" fill="none"></path>
+            </g>
+          </svg>
+          <span> Trending </span>
+        </a>
+        <a href="music.html" class="sidebar__section__link music">
+          <svg viewBox="0 0 24 24">
+            <g>
+              <path
+                d="M16.94 6.91l-1.41 1.45c.9.94 1.46 2.22 1.46 3.64s-.56 2.71-1.46 3.64l1.41 1.45c1.27-1.31 2.05-3.11 2.05-5.09s-.78-3.79-2.05-5.09zM19.77 4l-1.41 1.45C19.98 7.13 21 9.44 21 12.01c0 2.57-1.01 4.88-2.64 6.54l1.4 1.45c2.01-2.04 3.24-4.87 3.24-7.99 0-3.13-1.23-5.96-3.23-8.01zM7.06 6.91c-1.27 1.3-2.05 3.1-2.05 5.09s.78 3.79 2.05 5.09l1.41-1.45c-.9-.94-1.46-2.22-1.46-3.64s.56-2.71 1.46-3.64L7.06 6.91zM5.64 5.45L4.24 4C2.23 6.04 1 8.87 1 11.99c0 3.13 1.23 5.96 3.23 8.01l1.41-1.45C4.02 16.87 3 14.56 3 11.99s1.01-4.88 2.64-6.54z"
+              ></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </g>
+          </svg>
+          <span> Music </span>
+        </a>
+        <a href="#" class="sidebar__section__link">
+          <svg viewBox="0 0 24 24">
+            <g fill-rule="evenodd">
+              <path
+                d="M22,13V8l-5-3l-5,3l0,0L7,5L2,8v5l10,6L22,13z M9,11H7v2H6v-2H4v-1h2V8h1v2h2V11z M15,13 c-0.55,0-1-0.45-1-1s0.45-1,1-1s1,0.45,1,1S15.55,13,15,13z M18,11c-0.55,0-1-0.45-1-1s0.45-1,1-1s1,0.45,1,1S18.55,11,18,11z"
+              ></path>
+            </g>
+          </svg>
+          <span> Gaming </span>
+        </a>
+        <a href="#" class="sidebar__section__link">
+          <svg viewBox="0 0 24 24">
+            <g>
+              <path
+                d="M6.85 7.76V6.18H1v2.88c0 2.35 1.9 4.26 4.26 4.26h1.59v-1.59H5.4a2.81 2.81 0 01-2.81-2.8V7.75h4.26zM17.15 7.76V6.18H23v2.88c0 2.35-1.9 4.26-4.26 4.26h-1.59v-1.59h1.45a2.81 2.81 0 002.81-2.8V7.75h-4.26z"
+              ></path>
+              <path
+                d="M12 17.29a6.87 6.87 0 01-6.87-6.87V3h13.74v7.42c0 3.8-3.07 6.87-6.87 6.87z"
+              ></path>
+              <path
+                d="M12 17.29V3h6.87v7.42c0 3.8-3.07 6.87-6.87 6.87zM12 17.29l4.13 2.38H7.88L12 17.3zM16.13 19.67H7.88v2.38h8.25v-2.38z"
+              ></path>
+            </g>
+          </svg>
+          <span> Sports </span>
+        </a>
+      </section>
+      <!-- Yera -->
+    </div>
+
+    <!-- Main Body -->
+
+    <div class="music__banner">
+      <img
+        src="https://daily.jstor.org/wp-content/uploads/2023/01/good_times_with_bad_music_1050x700.jpg"
+        height="250"
+      />
+    </div>
+    <div class="music__channel">
+      <div class="music__channel__inner">
+        <img src="./images/cameron.png" />
+        <div>
+          <h1>
+            Music
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-patch-check"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+              />
+              <path
+                d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"
+              />
+            </svg>
+          </h1>
+          <h3>119M subscribers No videos</h3>
+          <br />
+          <p>
+            Visit the YouTube Music Channel to find today’s top talent, featured
+            artists, and playlists.
+          </p>
+          <br />
+          <a href="https://support.google.com/youtube/answer/2579942"
+            >support.google.com/youtube/answer/2579942</a
+          >
+        </div>
+      </div>
+
+      <button class="subscribed">Subscribe</button>
+    </div>
+
+    <div class="music__nav">
+      <div class="music__nav__container">
+        <button class="active__btn">Home</button>
+        <button>Community</button>
+        <button>About</button>
+      </div>
+    </div>
+
+    <div class="music__container__list">
+      <h3 class="name__play">All The Hits</h3>
+      <div class="cards">
+        <div class="card">
+          <img class="img__card" src="images/playlist.jpeg" />
+          <div class="content">
+            <h1>Huge Dance Hits</h1>
+            <p>
+              Massive hits from dance music's biggest artists. #ytmdance #plur
+            </p>
+            <p>112 tracks</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="img__card" src="images/playlist.jpeg" />
+          <div class="content">
+            <h1>AfroPop Hits</h1>
+            <p>
+              Massive hits from dance music's biggest artists. #ytmdance #plur
+            </p>
+            <p>85 tracks</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="img__card" src="images/playlist.jpeg" />
+          <div class="content">
+            <h1>Massive Rock Hits</h1>
+            <p>
+              Massive hits from dance music's biggest artists. #ytmdance #plur
+            </p>
+            <p>49 tracks</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------- -->
+      <h3 class="name__play">Mood Music</h3>
+      <div class="cards">
+        <div class="card">
+          <img class="img__card" src="images/playlist.jpeg" />
+          <div class="content">
+            <h1>Pop Gold</h1>
+            <p>
+              Massive hits from dance music's biggest artists. #ytmdance #plur
+            </p>
+            <p>112 tracks</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="img__card" src="images/playlist.jpeg" />
+          <div class="content">
+            <h1>Soft Rock Ballads</h1>
+            <p>
+              Massive hits from dance music's biggest artists. #ytmdance #plur
+            </p>
+            <p>112 tracks</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="img__card" src="images/playlist.jpeg" />
+          <div class="content">
+            <h1>Massive Rock Hits</h1>
+            <p>
+              Massive hits from dance music's biggest artists. #ytmdance #plur
+            </p>
+            <p>112 tracks</p>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+      <!-- ----------- -->
+      <div class="name__play__div">
+        <h3 class="name__play">RELEASED This Week&nbsp;&nbsp;</h3>
+        <svg
+          style="cursor: pointer"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          class="bi bi-play"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"
+          />
+        </svg>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img class="img__card" src="images/playlist.jpeg" />
+          <div class="content">
+            <h1>Pop Gold</h1>
+            <p>
+              Massive hits from dance music's biggest artists. #ytmdance #plur
+            </p>
+            <p>112 tracks</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="img__card" src="images/playlist.jpeg" />
+          <div class="content">
+            <h1>Massive Rock Hits</h1>
+            <p>
+              Massive hits from dance music's biggest artists. #ytmdance #plur
+            </p>
+            <p>112 tracks</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="img__card" src="images/playlist.jpeg" />
+          <div class="content">
+            <h1>Heavy Hitters</h1>
+            <p>
+              Massive hits from dance music's biggest artists. #ytmdance #plur
+            </p>
+            <p>112 tracks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
